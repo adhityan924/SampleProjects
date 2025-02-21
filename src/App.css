@@ -1,5 +1,35 @@
 .App {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.App.dark {
+  background-color: #1a1a1a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h2 {
   text-align: center;
+  color: #2d3436;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+.App.dark h2 {
+  color: #f1f1f1;
+}
+
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
 }
 
 .App-logo {
